@@ -1,0 +1,12 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval">
+
+    <solid android:color="@color/accentColor" /> <!-- Replace with your desired color -->
+
+    <size
+        android:width="100dp"
+        android:height="100dp" />
+
+    <corners android:radius="50dp" /> <!-- Ensure the radius is half of the width/height to create a circle -->
+
+</shape>

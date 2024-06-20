@@ -1,0 +1,36 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.restaurantapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/mercedes"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/mercedes"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Restaurantapp">
+
+        <activity android:name=".MainActivity" android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".ui.view.RestaurantListActivity" android:exported="false"/>
+        <activity android:name=".ui.view.RestaurantDetailActivity" android:exported="false"/>
+        <activity android:name=".ui.view.AddReviewActivity" android:exported="false"/>
+        <activity android:name=".ui.view.SearchActivity" android:exported="false"/>
+        <activity android:name=".ui.view.UpdateReviewActivity" />
+        <activity android:name=".ui.view.LoginActivity" />
+        <activity android:name=".ui.view.RegisterActivity" />
+        <activity android:name=".ui.view.ProfileActivity" />
+        <activity android:name=".ui.view.EditProfileActivity" />
+    </application>
+</manifest>

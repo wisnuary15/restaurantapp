@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".ui.view.RestaurantDetailActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="16dp">
+
+        <ImageView
+            android:id="@+id/restaurantImage"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:contentDescription="@string/restaurant_image"
+            android:scaleType="centerCrop"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:id="@+id/restaurantName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textStyle="bold"
+            android:paddingTop="8dp"
+            android:paddingBottom="4dp"
+            android:textColor="@color/primaryTextColor" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Deskripsi:"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/primaryTextColor"
+            android:paddingTop="4dp"
+            android:paddingBottom="2dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/restaurantDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:textColor="@color/secondaryTextColor" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Alamat:"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/primaryTextColor"
+            android:paddingTop="4dp"
+            android:paddingBottom="2dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/restaurantAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:textColor="@color/secondaryTextColor" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kategori:"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/primaryTextColor"
+            android:paddingTop="4dp"
+            android:paddingBottom="2dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/restaurantCategories"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:textColor="@color/secondaryTextColor" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Menu:"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/primaryTextColor"
+            android:paddingTop="4dp"
+            android:paddingBottom="2dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/restaurantMenus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:textColor="@color/secondaryTextColor" />
+
+        <Button
+            android:id="@+id/btnAddReview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Review"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="@color/accentColor"
+            android:textColor="@color/white"
+            android:fontFamily="sans-serif-medium" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="16dp"
+            android:clipToPadding="false" />
+
+    </LinearLayout>
+</ScrollView>

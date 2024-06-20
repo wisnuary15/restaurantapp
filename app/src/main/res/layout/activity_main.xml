@@ -1,0 +1,79 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/backgroundColor"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:theme="?attr/actionBarTheme"
+        android:elevation="4dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome to Restaurant App"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_gravity="center"
+        android:padding="16dp"
+        android:fontFamily="sans-serif-medium"
+        android:textColor="@color/primaryTextColor" />
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:src="@drawable/mercedes"
+        android:contentDescription="@string/Kirisaki"
+        android:layout_marginTop="16dp" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:cardElevation="4dp"
+        android:padding="16dp"
+        app:cardCornerRadius="8dp"
+        android:backgroundTint="@color/white">
+
+        <Button
+            android:id="@+id/btnViewRestaurants"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="View Restaurants"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/accentColor"
+            android:fontFamily="sans-serif-medium" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Explore the best restaurants in town"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_gravity="center"
+        android:padding="16dp"
+        android:fontFamily="sans-serif"
+        android:textColor="@color/secondaryTextColor"
+        android:gravity="center"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="© 2024 Restaurant App"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_gravity="center"
+        android:padding="16dp"
+        android:fontFamily="sans-serif"
+        android:textColor="@color/tertiaryTextColor"
+        android:gravity="center"
+        android:layout_marginTop="8dp" />
+</LinearLayout>

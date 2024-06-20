@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Mercedes</string>
+    <string name="add_review" />
+    <string name="restaurant_image" />
+    <string name="Restaurant" />
+    <string name="Kirisaki" />
+    <string name="UzumakiWisnu" />
+    <string name="WisnuUzumaki" />
+    <string name="search_icon_desc" />
+    <string name="mercedes" />
+    <string name="profile_photo" />
+</resources>

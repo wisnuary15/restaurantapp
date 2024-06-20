@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="btnDeleteReview" type="id" />
+    <item name="btnUpdateReview" type="id" />
+    <item name="btnSubmitReview" type="id" />
+    <item name="etReview" type="id" />
+    <item name="etUsername" type="id" />
+    <item name="btnAddReview" type="id" />
+    <item name="restaurantMenus" type="id" />
+    <item name="restaurantCategories" type="id" />
+    <item name="restaurantAddress" type="id" />
+    <item name="restaurantName" type="id" />
+    <item name="restaurantDescription" type="id" />
+    <item name="restaurantImage" type="id" />
+</resources>
